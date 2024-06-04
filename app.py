@@ -5,7 +5,7 @@ import time
 
 app = Flask(__name__)
 
-app.secret_key = "25022002pvkCdm"
+app.secret_key = "secret_key"
 app.config["SESSION_COOKIE_NAME"] = "Vibe it cookie"
 TOKEN_INFO = "token_info"
 
@@ -46,8 +46,8 @@ def redirectPage():
     session[TOKEN_INFO] = token_info
     return redirect(url_for('getPlaylist', _external=True))
 
-client_id = '04aa54106aea4c298e0bff75629acb64'
-client_secret = '7b753b35e9f2475f9980d27e4dd692c5'
+client_id = 'id'
+client_secret = 'secret'
 
 
 def create_spotify_oauth():
