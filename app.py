@@ -52,8 +52,8 @@ client_secret = 'secret'
 
 def create_spotify_oauth():
     return SpotifyOAuth(
-        client_id='04aa54106aea4c298e0bff75629acb64',
-        client_secret='7b753b35e9f2475f9980d27e4dd692c5',
+        client_id='id',
+        client_secret='secret',
         redirect_uri=url_for('redirectPage', _external=True),
         scope='user-library-read'
     )
